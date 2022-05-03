@@ -1,0 +1,66 @@
+{
+  "name": "dulcet-sw-precache-webpack-plugin",
+  "version": "0.11.4",
+  "description": "Webpack plugin for using service workers",
+  "main": "lib/index.js",
+  "scripts": {
+    "version": "make changelog && git add -p CHANGELOG.md && git checkout CHANGELOG.md",
+    "test:unit": "make unit_test",
+    "test:integration": "make integration_test",
+    "test": "make test"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "precache",
+    "sw-precache",
+    "service",
+    "worker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khanhduy1407/dulcet-sw-precache-webpack-plugin.git"
+  },
+  "author": "NKDuy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khanhduy1407/dulcet-sw-precache-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/khanhduy1407/dulcet-sw-precache-webpack-plugin#readme",
+  "directories": {
+    "lib": "./src"
+  },
+  "peerDependencies": {
+    "@dulcetjs/webpack": "^1 || ^2 || ^2.1.0-beta || ^2.2.1 || ^3"
+  },
+  "dependencies": {
+    "del": "^2.2.2",
+    "sw-precache": "^5.1.1",
+    "uglify-js": "^3.0.13"
+  },
+  "devDependencies": {
+    "@dulcetjs/webpack": "^2.2.1",
+    "@nkduy/babel-cli": "^6.22.0",
+    "@nkduy/babel-polyfill": "^6.23.0",
+    "@nkduy/babel-preset-stage-0": "^6.22.0",
+    "@nkduy/babel-register": "^6.24.1",
+    "ava": "^0.18.2",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-latest": "^6.22.0",
+    "bluebird": "^3.4.7",
+    "eslint": "^3.16.1",
+    "git-release-notes": "1.0.0",
+    "mkdirp": "^0.5.1",
+    "sinon": "^1.17.7"
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "@nkduy/babel-register",
+      "@nkduy/babel-polyfill"
+    ]
+  }
+}
